@@ -2,6 +2,7 @@
   "name": "starwars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mikmarsss.github.io/starwars",
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
     "@testing-library/jest-dom": "^6.5.0",
@@ -15,6 +16,8 @@
     "dotenv": "^16.4.5",
     "immer": "^10.1.1",
     "nth-check": "^2.1.1",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
@@ -30,7 +33,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [

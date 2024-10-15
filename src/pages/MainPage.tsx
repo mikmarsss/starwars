@@ -63,10 +63,10 @@ const MainPage: React.FC = () => {
             }
             <Container display="flex" gap="20px">
                 <Button onClick={prevPage} disabled={currentPage === 1}>
-                    Previous
+                    Предыдущая
                 </Button>
-                <Button onClick={nextPage} disabled={(indexOfLastCharacter >= characters.length) || (indexOfLastCharacter >= filteredCharacters.length)}>
-                    Next
+                <Button onClick={nextPage} disabled={(indexOfLastCharacter >= characters.length) || (indexOfLastCharacter >= filteredCharacters.length && isSerch)}>
+                    Следующая
                 </Button>
             </Container>
 
